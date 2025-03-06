@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const videos = [
@@ -34,8 +36,10 @@ const VideoGallery = () => {
       <div className="h-[400px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {videos.map((video) => (
           <div key={video.id} className="relative rounded-lg overflow-hidden shadow-lg">
-            <a href={video.videoUrl} target="_blank" rel="noopener noreferrer">
-              <img
+            <Link href={video.videoUrl} target="_blank" rel="noopener noreferrer">
+              <Image
+                width={100}
+                height={100}
                 src={video.thumbnail}
                 alt={video.title}
                 className="w-full h-48 object-cover"
@@ -45,7 +49,7 @@ const VideoGallery = () => {
                   ▶
                 </button>
               </div>
-            </a>
+            </Link>
             <p className="p-2 text-center font-semibold">{video.title}</p>
           </div>
         ))}

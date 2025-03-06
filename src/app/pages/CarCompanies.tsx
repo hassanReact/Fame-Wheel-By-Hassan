@@ -90,9 +90,9 @@ const CarCompanies = () => {
   ];
       
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className=" m-10">
       <h1 className="text-2xl sm:text-3xl font-medium mb-6 ml-2">Browse Cars by Make</h1>
-      <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
+      <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-0 sm:gap-4">
         {carBrands.map((item, index) => (
           <CompanyCard
             key={index}

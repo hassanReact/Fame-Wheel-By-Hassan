@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -9,7 +10,9 @@ const Footer = () => {
         {/* Logo and Links Section */}
         <div className="flex mb-8">
           <div className="w-1/5">
-            <img
+            <Image
+              width={100}
+              height={100}
               src="/logo.png"
               alt="Fame Wheels Logo"
               className="w-40"
@@ -25,7 +28,7 @@ const Footer = () => {
             <ul className="space-y-0">
               <li>About Us</li>
               <li>Contact Us</li>
-              <li>FAQ's</li>
+              <li>FAQs</li>
               <li>Privacy Policy</li>
               <li>Terms And Conditions</li>
               <li>Refund Policy</li>

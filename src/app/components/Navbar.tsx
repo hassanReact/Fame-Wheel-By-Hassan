@@ -1,4 +1,3 @@
-import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -12,7 +11,6 @@ interface NavigationProps {
 }
 
 export default function Navigation({ isScrolled }: NavigationProps) {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     const navItems = [
         { name: "Used Cars", href: "/used-cars", hasDropdown: true },

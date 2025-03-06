@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin } from "lucide-react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import Image from "next/image"
 
 interface Props {
     title : string
@@ -152,13 +153,11 @@ const cars = [
 const CarCard = ({ car, index }: Props) => (
         <Card key={index} className="group overflow-hidden transition-all duration-300 hover:shadow-lg">
           <div className="flex-shrink-0">
-            {/* {car.featured && (
-            //   {<div className="bg-red-600 text-white px-2 py-1 text-sm rounded-md z-10">
-            //     Featured
-            //   </div>}
-            )} */}
+ 
             <div className="aspect-[4/3] overflow-hidden">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src={car.image || "/placeholder.svg"}
                 alt={car.name}
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"

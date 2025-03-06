@@ -47,7 +47,7 @@ const FuelCategory = () => {
               className="p-4 border rounded-lg shadow-sm flex items-center justify-center space-x-2"
             >
               <Image
-                src={''}
+                src={'/'}
                 alt={fuel.name}
                 className="w-6 h-6 object-contain"
                 width={100}
@@ -68,7 +68,7 @@ const FuelCategory = () => {
               className="p-4 border rounded-lg shadow-sm flex items-center justify-center space-x-2"
             >
               <Image
-                src={""}
+                src={"/"}
                 alt={fuel.name}
                 className="w-6 h-6 object-contain"
                 width={100}
