@@ -1,51 +1,39 @@
 import Link from "next/link"
 import { Facebook, Instagram, Twitter } from "lucide-react"
-import certified1 from '../../../public/cer.png'
-import certified2 from '../../../public/cer1.png'
-import certified3 from '../../../public/cer2.png'
+import certified1 from "../../../public/cer.png"
+import certified2 from "../../../public/cer1.png"
+import certified3 from "../../../public/cer2.png"
 import Image from "next/image"
 
 const Footer = () => {
   return (
     <footer className="mt-10 bg-gray-100 text-black">
-      <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-6 sm:py-10 px-4 sm:px-6 lg:px-8">
         {/* Newsletter Subscription */}
-        <div className="max-w-5xl mx-auto py-5 px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center bg-white p-4 sm:p-6 rounded-lg shadow-md text-center mb-10">
-          <h2 className="text-xl sm:text-2xl font-semibold">
-            Subscribe to our <span className="text-red-500">Newsletter</span>
-          </h2>
-          <div className="mt-4 flex flex-col sm:flex-row justify-center gap-2 sm:gap-0">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="w-full sm:w-[100%] p-3 border rounded-lg sm:rounded-r-none outline-none"
-            />
-            <button className="bg-red-600 text-white px-6 py-3 rounded-lg sm:rounded-l-none shadow-md hover:bg-red-700 transition-colors">
-              Subscribe
-            </button>
-          </div>
-        </div>
-        </div>
-
-        {/* Logo and Description */}
-        {/* <div className="mb-8">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-            <div className="w-full sm:w-1/5">
-              <img src="/logo.png" alt="Fame Wheels Logo" className="w-40 mx-auto sm:mx-0" />
-              <p className="mt-4 text-sm text-gray-600 max-w-xs mx-auto sm:mx-0 text-center sm:text-left">
-                Pakistans trusted platform for buying and selling cars with verified listings and premium services.
-              </p>
+        <div className="max-w-5xl mx-auto py-3 sm:py-5 px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center bg-white p-4 sm:p-6 rounded-lg shadow-md text-center md:text-left mb-6 sm:mb-10">
+            <h2 className="text-xl sm:text-2xl font-semibold">
+              Subscribe to our <span className="text-red-500">Newsletter</span>
+            </h2>
+            <div className="mt-4 md:mt-0 w-full md:w-auto flex flex-col sm:flex-row justify-center gap-2 sm:gap-0 max-w-md md:max-w-none mx-auto md:mx-0">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                className="w-full p-3 border rounded-lg sm:rounded-r-none outline-none"
+              />
+              <button className="bg-red-600 text-white px-6 py-3 rounded-lg sm:rounded-l-none shadow-md hover:bg-red-700 transition-colors">
+                Subscribe
+              </button>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* Footer Links Section */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-sm">
+        <div className="grid grid-cols-2 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 text-sm">
           {/* Company */}
-          <div className="text-center sm:text-left">
-            <h3 className="font-bold mb-4 text-base">Company</h3>
-            <ul className="space-y-0">
+          <div className="text-center xs:text-left">
+            <h3 className="font-bold mb-3 sm:mb-4 text-base">Company</h3>
+            <ul className="space-y-1 sm:space-y-2">
               <li>
                 <Link href="/about" className="hover:text-red-500 transition-colors">
                   About Us
@@ -85,9 +73,9 @@ const Footer = () => {
           </div>
 
           {/* Cars By Make */}
-          <div className="text-center sm:text-left">
-            <h3 className="font-bold mb-4 text-base">Cars By Make</h3>
-            <ul className="space-y-0">
+          <div className="text-center xs:text-left">
+            <h3 className="font-bold mb-3 sm:mb-4 text-base">Cars By Make</h3>
+            <ul className="space-y-1 sm:space-y-2">
               <li>
                 <Link href="/cars/jetour" className="hover:text-red-500 transition-colors">
                   Jetour Cars For Sale
@@ -142,9 +130,9 @@ const Footer = () => {
           </div>
 
           {/* Cars By Cities */}
-          <div className="text-center sm:text-left">
-            <h3 className="font-bold mb-4 text-base">Cars By Cities</h3>
-            <ul className="space-y-0">
+          <div className="text-center xs:text-left">
+            <h3 className="font-bold mb-3 sm:mb-4 text-base">Cars By Cities</h3>
+            <ul className="space-y-1 sm:space-y-2">
               <li>
                 <Link href="/cities/karachi" className="hover:text-red-500 transition-colors">
                   Cars In Karachi
@@ -199,9 +187,9 @@ const Footer = () => {
           </div>
 
           {/* Cars By Category */}
-          <div className="text-center sm:text-left">
-            <h3 className="font-bold mb-4 text-base">Cars By Category</h3>
-            <ul className="space-y-0">
+          <div className="text-center xs:text-left">
+            <h3 className="font-bold mb-3 sm:mb-4 text-base">Cars By Category</h3>
+            <ul className="space-y-1 sm:space-y-2">
               <li>
                 <Link href="/category/660cc" className="hover:text-red-500 transition-colors">
                   660cc Cars
@@ -256,9 +244,9 @@ const Footer = () => {
           </div>
 
           {/* Sell On FameWheels */}
-          <div className="text-center sm:text-left">
-            <h3 className="font-bold mb-4 text-base">Sell On FameWheels</h3>
-            <ul className="space-y-0">
+          <div className="text-center xs:text-left">
+            <h3 className="font-bold mb-3 sm:mb-4 text-base">Sell On FameWheels</h3>
+            <ul className="space-y-1 sm:space-y-2">
               <li>
                 <Link href="/sell" className="hover:text-red-500 transition-colors">
                   Sell On FameWheels
@@ -274,15 +262,32 @@ const Footer = () => {
                   Become A Member
                 </Link>
               </li>
-
             </ul>
+
             {/* Payment Methods */}
-            <h3 className="font-bold mb-4 mt-8 text-base">Certified By</h3>
-            <div className="flex flex-wrap justify-center sm:justify-start gap-2">
-              <Image src={certified1} width={40} height={50} alt="Visa" className="h-8" />
-              <Image src={certified2} width={40} height={50} alt="Mastercard" className="h-8" />
-              <Image src={certified3} width={40} height={50} alt="Mastercard" className="h-8" />
-              
+            <h3 className="font-bold mb-3 sm:mb-4 mt-6 sm:mt-8 text-base">Certified By</h3>
+            <div className="flex flex-wrap justify-center xs:justify-start gap-2">
+              <Image
+                src={certified1 || "/placeholder.svg"}
+                width={40}
+                height={50}
+                alt="Certification Badge 1"
+                className="h-8 w-auto"
+              />
+              <Image
+                src={certified2 || "/placeholder.svg"}
+                width={40}
+                height={50}
+                alt="Certification Badge 2"
+                className="h-8 w-auto"
+              />
+              <Image
+                src={certified3 || "/placeholder.svg"}
+                width={40}
+                height={50}
+                alt="Certification Badge 3"
+                className="h-8 w-auto"
+              />
             </div>
           </div>
         </div>
@@ -293,8 +298,8 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm">
             <p className="text-center md:text-left mb-4 md:mb-0">
-              Design and Developed by Hassan Kashif, Copyright &copy; {new Date().getFullYear()} Fame Wheels
-              (SMC-Pvt.) Ltd, All Rights Reserved.
+              Design and Developed by Hassan Kashif, Copyright &copy; {new Date().getFullYear()} Fame Wheels (SMC-Pvt.)
+              Ltd, All Rights Reserved.
             </p>
             <div className="flex items-center space-x-4">
               <span>Follow Us:</span>
