@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuLabel } from "@/components/ui/dropdown-menu"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 import { ChevronDown, Menu } from "lucide-react"
 import logo from '../../../public/logo.png'
 
@@ -47,6 +47,7 @@ export default function Navigation({ isScrolled }: NavigationProps) {
                                         {item.name} <ChevronDown className="h-4 w-4" />
                                     </DropdownMenuTrigger>
                                     <DropdownMenuContent>
+                                        <DropdownMenuLabel>{item.name} Options</DropdownMenuLabel>
                                         <DropdownMenuItem>
                                             <Link href={`${item.href}/option-1`} className="w-full">Option 1</Link>
                                         </DropdownMenuItem>
@@ -80,6 +81,7 @@ export default function Navigation({ isScrolled }: NavigationProps) {
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white">
+                        <SheetTitle>Navigation Menu</SheetTitle>
                         <div className="flex flex-col gap-6 mt-6">
                             {navItems.map((item) => (
                                 <div key={item.name} className="border-b border-gray-200 pb-4">
