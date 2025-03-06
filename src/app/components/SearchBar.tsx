@@ -31,12 +31,19 @@ export default function SearchForm() {
         </SelectContent> */}
       </Select>
 
-      <Button className="bg-red-500 mt-1 hover:bg-red-600 text-white md:w-[150px] md:h-[40px]">Search</Button>
+        <div className="w-full">
+          <Button className="w-full h-[45px] bg-red-500 hover:bg-red-600 text-white">Search</Button>
+        </div>
 
-      <Button variant="outline" className="border-gray-300 text-black mt-1 hover:bg-red-600 md:w-[150px] md:h-[40px]">
-        Advance Search
-      </Button>
-    </div>
+        <div className="w-full">
+          <Button
+            variant="outline"
+            className="w-full h-[45px] border-gray-300 text-black hover:bg-red-600 hover:text-white"
+          >
+            Advanced Search
+          </Button>
+        </div>
+      </div>
   )
 }
 
