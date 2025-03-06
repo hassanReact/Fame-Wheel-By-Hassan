@@ -30,7 +30,7 @@ const PaymentPartners = () => {
         ))}
       </div>
 
-      <div className="w-full h-[200px] flex justify-between bg-gradient-to-r from-blue-600 to-red-500 text-white p-6 rounded-lg">
+      <div className="w-full lg:h-[200px] h-[500px] flex flex-col lg:flex-row justify-between bg-gradient-to-r from-blue-600 to-red-500 text-white p-6 rounded-lg">
         {features.map((feature, index) => (
           <div key={index} className="flex gap-2 items-center">
             <Image src={feature.icon} width={80} height={100} alt="features"/>
