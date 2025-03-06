@@ -7,38 +7,51 @@ export default function SearchForm() {
   const cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Peshawar", "Quetta", "Multan", "Faisalabad"]
 
   return (
-    <div className="absolute z-0 bottom-[-30px] bg-white p-6 w-[80vw] rounded-lg shadow-lg flex flex-col md:flex-row gap-4">
-      <Select>
-        <SelectTrigger className="w-full md:w-[550px] md:h-[50px]">
-          <SelectValue placeholder="Select Make" />
-        </SelectTrigger>
-        <SelectContent>
-          {carMakes.map((make) => (
-            <SelectItem key={make} value={make.toLowerCase()}>
-              {make}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+    <div className="absolute z-30 bottom-[-30px] left-1/2 transform -translate-x-1/2 bg-white p-4 sm:p-6 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] max-w-6xl rounded-lg shadow-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="w-full">
+          <Select>
+            <SelectTrigger className="w-full h-[45px]">
+              <SelectValue placeholder="Select Make" />
+            </SelectTrigger>
+            <SelectContent className="max-h-[300px] overflow-y-auto z-50">
+              {carMakes.map((make) => (
+                <SelectItem key={make} value={make.toLowerCase()}>
+                  {make}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
 
-      <Select>
-        <SelectTrigger className="w-full md:w-[550px] md:h-[50px]">
-          <SelectValue placeholder="Select City" />
-        </SelectTrigger>
-        <SelectContent>
-          {cities.map((city) => (
-            <SelectItem key={city} value={city.toLowerCase()}>
-              {city}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+        <div className="w-full">
+          <Select>
+            <SelectTrigger className="w-full h-[45px]">
+              <SelectValue placeholder="Select City" />
+            </SelectTrigger>
+            <SelectContent className="max-h-[300px] overflow-y-auto z-50">
+              {cities.map((city) => (
+                <SelectItem key={city} value={city.toLowerCase()}>
+                  {city}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
 
-      <Button className="bg-red-500 mt-1 hover:bg-red-600 text-white md:w-[150px] md:h-[40px]">Search</Button>
+        <div className="w-full">
+          <Button className="w-full h-[45px] bg-red-500 hover:bg-red-600 text-white">Search</Button>
+        </div>
 
-      <Button variant="outline" className="border-gray-300 text-black mt-1 hover:bg-red-600 md:w-[150px] md:h-[40px]">
-        Advance Search
-      </Button>
+        <div className="w-full">
+          <Button
+            variant="outline"
+            className="w-full h-[45px] border-gray-300 text-black hover:bg-red-600 hover:text-white"
+          >
+            Advanced Search
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }
