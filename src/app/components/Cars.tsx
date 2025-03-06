@@ -32,7 +32,7 @@ const cars = [
     name: "Toyota Prius 2012",
     price: "Call for price",
     location: "Karachi",
-    image: "https://images.unsplash.com/photo-1591051270770-b268b0575d34?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&q=80&w=800",
     featured: true,
   },
   {
@@ -72,7 +72,7 @@ const cars = [
     name: "Toyota Corolla 2021",
     price: "PKR 62.52 lacs",
     location: "Karachi",
-    image: "https://images.unsplash.com/photo-1591051270770-b268b0575d34?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&q=80&w=800",
     featured: true,
   },
   {
@@ -96,7 +96,7 @@ const cars = [
     name: "Toyota Prius 2012",
     price: "Call for price",
     location: "Karachi",
-    image: "https://images.unsplash.com/photo-1591051270770-b268b0575d34?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&q=80&w=800",
     featured: true,
   },
   {
@@ -136,7 +136,7 @@ const cars = [
     name: "Toyota Corolla 2021",
     price: "PKR 62.52 lacs",
     location: "Karachi",
-    image: "https://images.unsplash.com/photo-1591051270770-b268b0575d34?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1583267746897-2cf415887172?auto=format&fit=crop&q=80&w=800",
     featured: true,
   },
   {

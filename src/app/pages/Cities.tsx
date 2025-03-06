@@ -6,7 +6,7 @@ const Cities = () => {
     {
       id: 'city1',
       name: 'Karachi',
-      image: '/karachi.png'
+      image: '/Karachi.png'
     },
     {
       id: 'city2',
@@ -26,12 +26,12 @@ const Cities = () => {
     {
       id: 'city5',
       name: 'Lahore',
-      image: '/lahore.png'
+      image: '/Lahore.png'
     },
     {
       id: 'city6',
       name: 'Islamabad',
-      image: '/islamabad.png'
+      image: '/Islamabad.png'
     },
     {
       id: 'city7',
