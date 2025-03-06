@@ -3,8 +3,8 @@ import Image from "next/image";
 const PaymentPartners = () => {
   const partners = [
     { name: "JazzCash", src: "/jazzcash.png" },
-    { name: "PayFast", src: "/payfast.png" },
-    { name: "Bank Alfalah", src: "/alfalah.png" },
+    { name: "PayFast", src: "/Payfast.png" },
+    { name: "Bank Alfalah", src: "/Alfalah.png" },
     { name: "Bank AL Habib", src: "/al-habib.png" },
     { name: "NBP", src: "/NBP.png" },
   ];
