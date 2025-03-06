@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu"
-import { ChevronDown, Menu, Home, Search, Plus, User, MoreHorizontal } from "lucide-react"
+import { ChevronDown,  Home, Search, Plus, MoreHorizontal } from "lucide-react"
 import logo from "../../../public/logo.png"
 
 interface NavigationProps {
