@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
+
 const Services = () => {
     const services = [
         {
@@ -31,8 +33,7 @@ const Services = () => {
             description: "Dedicated Sales Expert to Sell your Car. We Bargain for you.",
             link: "#",
             image: "car5.png"
-        }
-        ,
+        },
         {
             title: "Car Finance",
             description: "FameWheels proudly offers premier Financing services in Pakistan.",
@@ -42,16 +43,18 @@ const Services = () => {
     ];
 
     return (
-        <div className="m-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-            {services.map((service, index) => (
-                <ServiceCard
-                    key={index}
-                    title={service.title}
-                    description={service.description}
-                    image={`/${service.image}`}
-                />
-            ))}
-        </div>
+        <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                {services.map((service, index) => (
+                    <ServiceCard
+                        key={index}
+                        title={service.title}
+                        description={service.description}
+                        image={`/${service.image}`}
+                    />
+                ))}
+            </div>
+        </section>
     );
 };
 
