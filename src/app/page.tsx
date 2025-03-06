@@ -5,8 +5,11 @@ import CarCompanies from "./pages/CarCompanies";
 import CarInspection from "./pages/CarInspection";
 import CarSuggestionBanner from "./pages/CarSuggestionBanner";
 import Cities from "./pages/Cities";
+import Footer from "./pages/Footer";
 import FuelCategory from "./pages/FuelCategory";
 import HomePage from "./pages/HomePage";
+import NewsLetter from "./pages/NewsLetter";
+import PaymentPartners from "./pages/PaymentPartner";
 import Services from "./pages/Services";
 import VideoPage from "./pages/VideoPage";
 
@@ -31,6 +34,9 @@ export default function Home() {
       <BrowseCars/>
       <CarBanner/>
       <VideoPage/>
+      <PaymentPartners/>
+      <NewsLetter/>
+      <Footer/>
     </>
   );
 }
